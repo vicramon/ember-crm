@@ -1,17 +1,17 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: ember-hello-world_development
+  database: ember-crm_development
   pool: 5
 
 test:
   adapter: postgresql
   encoding: unicode
-  database: ember-hello-world_test
+  database: ember-crm_test
   pool: 5
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: ember-hello-world_production
+  database: ember-crm_production
   pool: 5

@@ -1,3 +1,3 @@
-EmberHelloWorld::Application.routes.draw do
+EmberCRM::Application.routes.draw do
   root to: 'home#index'
 end

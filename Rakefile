@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-EmberHelloWorld::Application.load_tasks
+EmberCRM::Application.load_tasks

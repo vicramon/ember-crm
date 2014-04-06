@@ -1,4 +1,4 @@
-EmberHelloWorld::Application.configure do
+EmberCRM::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
   config.ember.variant = :production
