@@ -7,6 +7,8 @@ gem 'ember-rails'
 gem 'ember-source'
 gem 'emblem-rails'
 
+gem 'puma'
+
 # Use postgresql as the database for Active Record
 gem 'pg'
 
