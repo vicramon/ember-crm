@@ -33,7 +33,7 @@
     "command": "jtemplate"
   },
   "app/assets/javascripts/router.js.coffee": {
-    "command": "jrouter"
+    "command": "jini"
   },
  "spec/javascripts/**/*_spec.js.coffee": {
     "command": "jspec",
