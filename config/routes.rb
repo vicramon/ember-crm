@@ -6,4 +6,7 @@ EmberCRM::Application.routes.draw do
       resources :leads
     end
   end
+
+  get 'ui(/:action)', controller: 'ui'
+
 end

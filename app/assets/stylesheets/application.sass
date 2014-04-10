@@ -1,0 +1,119 @@
+@import "whitespace-reset"
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300,400italic)
+
+html
+  position: relative
+  min-height: 100%
+
+$app_width: 88%
+
+body
+  font-size: 15px
+  color: #222
+  font-family: Roboto
+  margin: 0 0 65px
+
+a, a:visited, a:active
+  color: #236FFF
+  text-decoration: none
+  &:hover
+    text-decoration: underline
+
+p
+  margin: 0 0 20px 0
+  line-height: 1.7
+  color: #333
+
+h1, h2
+  font-family: "Roboto"
+
+h1
+  font-size: 26px
+  font-weight: bold
+  padding: 0 0 20px 0
+
+h2
+  font-size: 21px
+  color: #222
+  padding: 0 0 12px 0
+  font-weight: bold
+
+header
+  background: #F57011
+  height: 47px
+  article
+    width: $app_width
+    margin: 0 auto
+    .logo
+      padding: 4px 0 0 0
+      a
+        font-size: 28px
+        font-family: "Maven Pro"
+        font-weight: 500
+        color: white
+    nav
+      padding: 15px 0 0 0
+      float: right
+      font-family: "Maven Pro"
+      font-weight: medium
+      a, a:hover, a:visited, a:active
+        margin-right: 30px
+        color: white
+
+section
+  margin: 0 auto
+  width: $app_width
+
+$top_spacing: 30px
+
+article#leads
+  margin: $top_spacing 35px 0 0
+  width: 25%
+  background: #F6F6F6
+  float: left
+  padding: 15px 20px 20px
+  h1
+    font-size: 20px
+    padding-left: 6px
+    padding-bottom: 14px
+  ul
+    li
+      border-bottom: 1px solid #DDDDDD
+      padding: 8px 6px 10px
+      cursor: pointer
+      &:hover, &:active
+        background: #F8E5CE
+
+article#lead
+  margin: $top_spacing
+  width: 60%
+  float: left
+  a.edit
+    font-size: 15px
+    font-weight: normal
+    margin-left: 15px
+
+input, select, textarea
+  font-family: Roboto
+  font-size: 16px
+
+textarea
+  width: 400px
+  height: 100px
+
+label
+  vertical-align: top
+  width: 90px
+
+input[type='submit']
+  background: #F57011
+  border: none
+  padding: 5px 25px 8px
+  font-weight: 500
+  color: white
+  cursor: pointer
+
+footer
+  padding: 30px 0 0 0
+  height: 0px
+  clear: both
