@@ -1,0 +1,41 @@
+%header
+  %article
+    .logo
+      %h1= link_to "EmberCRM", '#'
+
+%section#main
+
+  %article#leads
+    %h1 Leads
+    %ul
+      - 15.times do
+        %li= Faker::Name.name
+
+
+  %article#lead
+    %h1
+      Rob Stark
+      = link_to "edit", "#", class: 'edit'
+
+    %p
+      Name: Rob Stark
+    %p
+      Email: rob@winterfell.com
+    %p
+      Phone: (214) 555 - 3223
+
+    %p
+      %label Status:
+      %select
+        %option(value='new') new
+        %option(value='in progress') in progress
+        %option(value='closed') closed
+        %option(value='bad') bad
+
+    %p
+      %label Notes:
+      %br
+      %textarea
+
+    %p
+      %input(type='submit' value='Save Changes')
