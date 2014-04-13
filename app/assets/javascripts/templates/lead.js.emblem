@@ -1,0 +1,14 @@
+article#lead
+  h1= model.fullName
+
+  p
+    ' Name:
+    = model.fullName
+
+  p
+    ' Email:
+    = model.email
+
+  p
+    ' Phone:
+    = model.phone

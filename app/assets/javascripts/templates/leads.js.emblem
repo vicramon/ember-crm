@@ -2,5 +2,7 @@ article#leads
   h1 Leads
   ul
     each lead in controller
-      li
+      = link-to 'lead' lead tagName="li"
         = lead.fullName
+
+= outlet
