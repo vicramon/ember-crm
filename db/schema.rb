@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20140406192036) do
   create_table "leads", force: true do |t|
     t.string   "first_name"
     t.string   "last_name"
+    t.string   "email"
     t.string   "phone"
     t.string   "status"
     t.text     "notes"
