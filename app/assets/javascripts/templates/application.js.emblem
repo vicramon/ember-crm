@@ -1,8 +1,0 @@
-header
-  article
-    .logo
-      h1
-        = link-to 'leads' | Ember CRM
-
-section#main
-  = outlet
