@@ -1,0 +1,31 @@
+article#lead
+  h1
+    fullName
+
+  p
+    ' Name:
+    fullName
+
+  p
+    ' Email:
+    email
+
+  p
+    ' Phone:
+    phone
+
+  p
+    label for=view.status.elementId Status:
+    view Ember.Select content=App.Lead.STATUSES value=model.status viewName="status"
+
+  p
+    label for=view.notes.elementId Notes:
+    br
+    view Ember.TextArea value=model.notes viewName="notes"
+
+  p
+    input type='submit' value='Save Changes' click="saveChanges"
+    if isDirty
+      .unsaved unsaved changes
+    if isSaving
+      .saving saving...
