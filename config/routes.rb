@@ -7,6 +7,6 @@ EmberCRM::Application.routes.draw do
     end
   end
 
-  get '*path', to: 'home#index'
   get 'ui(/:action)', controller: 'ui'
+  get '*path', to: 'home#index'
 end
