@@ -28,6 +28,8 @@ unless isEditing
       view Ember.TextArea value=model.notes viewName="notes"
 
     p
+      a.delete href='#' click="delete" delete
+
       input type='submit' value='Save Changes' click="saveChanges"
       if isDirty
         .unsaved unsaved changes

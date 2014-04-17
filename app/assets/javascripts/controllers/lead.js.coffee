@@ -9,3 +9,7 @@ App.LeadController = Ember.ObjectController.extend
   actions:
 
     saveChanges: -> @get('model').save()
+
+    delete: ->
+      @get('model').destroyRecord()
+      @transitionToRoute 'leads'
