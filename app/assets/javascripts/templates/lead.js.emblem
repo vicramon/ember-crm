@@ -1,6 +1,7 @@
 article#lead
   h1
     fullName
+    link-to 'edit' 'editLead' model classNames='edit'
 
   p
     ' Name:
