@@ -20,6 +20,7 @@ unless isEditing
 
     p
       label for=view.status.elementId Status:
+      '
       view Ember.Select content=App.Lead.STATUSES value=model.status viewName="status"
 
     p
