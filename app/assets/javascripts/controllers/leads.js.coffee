@@ -8,4 +8,4 @@ App.LeadsController = Ember.ArrayController.extend
   searchedLeads: ( ->
     search = @get('search').toLowerCase()
     @filter (lead) => lead.get('fullName').toLowerCase().indexOf(search) != -1
-  ).property('search', 'content.@each.fullName')
+  ).property('search', '@each.fullName')
