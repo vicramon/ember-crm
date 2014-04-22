@@ -2,7 +2,7 @@ App.LeadController = Ember.ObjectController.extend
 
   isEditing: false
 
-  showUnsaved: ( ->
+  showUnsavedMessage: ( ->
     @get('isDirty') and !@get('isSaving')
   ).property('isDirty', 'isSaving')
 

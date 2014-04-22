@@ -32,7 +32,7 @@ unless isEditing
       a.delete href='#' click="delete" delete
 
       input type='submit' value='Save Changes' click="saveChanges"
-      if isDirty
+      if showUnsavedMessage
         .unsaved unsaved changes
       if isSaving
         .saving saving...
