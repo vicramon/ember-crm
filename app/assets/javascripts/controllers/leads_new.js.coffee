@@ -6,7 +6,7 @@ App.LeadsNewController = Ember.Controller.extend
       fields = @get('fields')
       if App.Lead.valid(fields)
         lead = @store.createRecord 'lead', fields
-        lead.save().then (lead) =>
+        lead.save().then =>
           @transitionToRoute 'lead', lead
       else
         @set 'showError', true
