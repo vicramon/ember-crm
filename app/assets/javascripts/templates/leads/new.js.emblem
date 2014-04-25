@@ -1,0 +1,26 @@
+article#lead
+  h1 New Lead
+
+  if showError
+    .error Leads must have a first and last name.
+
+  form
+    fieldset
+      dl
+        dt: label First Name:
+        dd: view Ember.TextField value=fields.firstName
+
+      dl
+        dt: label Last Name:
+        dd: view Ember.TextField value=fields.lastName
+
+      dl
+        dt: label Email:
+        dd: view Ember.TextField value=fields.email
+
+      dl
+        dt: label Phone:
+        dd: view Ember.TextField value=fields.phone
+
+    fieldset.actions
+      input type='submit' value='Create Lead' click="createLead"
