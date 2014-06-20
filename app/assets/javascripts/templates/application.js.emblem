@@ -6,3 +6,5 @@ header
 
 section#main
   = outlet
+
+footer
