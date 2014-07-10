@@ -1,12 +1,10 @@
-App.LeadsNewController = Ember.Controller.extend
+App.LeadsNewController = Ember.ObjectController.extend
 
   actions:
 
     createLead: ->
-      fields = @get('fields')
-      if App.Lead.valid(fields)
-        lead = @store.createRecord 'lead', fields
-        lead.save().then =>
-          @transitionToRoute 'lead', lead
+      if @get('model.isValid')
+        @get('model').save().then =>
+          @transitionToRoute 'lead', @get('model')
       else
         @set 'showError', true
