@@ -3,6 +3,10 @@ development:
   encoding: unicode
   database: ember-crm_development
   pool: 5
+<% if Gem.win_platform? %>
+  username: ember-crm_development
+  password: only_need_in_windows
+<% end %>
 
 test:
   adapter: postgresql
