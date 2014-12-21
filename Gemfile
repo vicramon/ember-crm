@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-ruby "2.1.0"
 
 gem 'coffee-rails'
 gem 'ember-rails'
@@ -12,7 +11,7 @@ gem 'jquery-rails'
 gem 'rails_12factor'
 gem 'pg'
 gem 'puma'
-gem 'rails', '4.0.4'
+gem 'rails', '4.0.12'
 gem 'sass-rails'
 gem 'uglifier'
 gem 'pry-rails'
