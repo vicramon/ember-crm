@@ -6,6 +6,8 @@ App.LeadController = Ember.ObjectController.extend
     @get('isDirty') and !@get('isSaving')
   ).property('isDirty', 'isSaving')
 
+  leadStatues: App.Lead.STATUSES
+
   actions:
 
     saveChanges: -> @get('model').save()

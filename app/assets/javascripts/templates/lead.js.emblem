@@ -21,7 +21,7 @@ unless isEditing
     p
       label for=view.status.elementId Status:
       '
-      = view 'select' content=App.Lead.STATUSES value=model.status viewName="status"
+      = view 'select' content=leadStatues value=model.status viewName="status"
 
     p
       label for=view.notes.elementId Notes:
