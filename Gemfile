@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'coffee-rails'
-gem 'ember-rails'
+gem 'ember-rails', '~> 0.16.4'
 gem 'ember-source', '~> 1.8.1'
 gem 'emblem-rails'
 gem 'emblem-source', '~> 0.3.18'
