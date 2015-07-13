@@ -1,17 +1,19 @@
-App.LeadController = Ember.ObjectController.extend
+App.LeadController = Ember.Controller.extend
 
   isEditing: false
 
   showUnsavedMessage: ( ->
-    @get('isDirty') and !@get('isSaving')
-  ).property('isDirty', 'isSaving')
+    @get('model.hasDirtyAttributes') and !@get('model.isSaving')
+  ).property('model.hasDirtyAttributes', 'model.isSaving')
 
   leadStatues: App.Lead.STATUSES
 
   actions:
 
-    saveChanges: -> @get('model').save()
+    saveChanges: ->
+      if @get('model.hasDirtyAttributes')
+        @get('model').save()
 
-    delete: ->
+    destroy: ->
       @get('model').destroyRecord().then =>
         @transitionToRoute 'leads'

@@ -1,9 +1,9 @@
-App.LeadEditController = Ember.ObjectController.extend
+App.LeadEditController = Ember.Controller.extend
 
   actions:
 
     cancel: ->
-      @get('model').rollback()
+      @get('model').rollbackAttributes()
       @transitionToRoute 'lead'
 
     saveChanges: ->
