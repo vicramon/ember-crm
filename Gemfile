@@ -1,8 +1,10 @@
 source 'https://rubygems.org'
 
 gem 'coffee-rails'
-gem 'ember-rails', '~> 0.19.0'
+gem 'ember-rails', '~> 0.19.2'
 gem 'ember-source', '~> 1.12.1'
+gem 'ember-data-source', '~> 1.13.11'
+gem 'active-model-adapter-source', '~> 1.13.6'
 gem 'ember-emblem-template'
 gem 'emblem-source', '~> 0.4'
 gem 'faker'
