@@ -18,3 +18,5 @@ gem 'rails', '~> 4.0.13'
 gem 'sass-rails'
 gem 'uglifier'
 gem 'pry-rails'
+
+gem 'nokogiri', '~> 1.6.7.rc3'
