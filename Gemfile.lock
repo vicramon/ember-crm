@@ -58,10 +58,10 @@ GEM
     ember-es6_template (0.4.4)
       babel-transpiler (>= 0.6.0, < 0.8)
       sprockets (>= 2.1, < 4)
-    ember-handlebars-template (0.7.0)
+    ember-handlebars-template (0.7.3)
       barber (>= 0.11.0)
-      sprockets (>= 3.3, < 3.6)
-    ember-rails (0.20.0)
+      sprockets (>= 3.3, < 4)
+    ember-rails (0.20.4)
       active-model-adapter-source (>= 1.13.0)
       active_model_serializers
       ember-cli-assets (~> 0.0.1)
@@ -180,7 +180,7 @@ DEPENDENCIES
   coffee-rails
   ember-data-source (~> 1.13.15)
   ember-emblem-template
-  ember-rails (~> 0.20.0)
+  ember-rails
   ember-source (~> 1.12.1)
   emblem-source (~> 0.4)
   faker
