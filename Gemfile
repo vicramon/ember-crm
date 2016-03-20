@@ -14,7 +14,7 @@ gem 'jquery-rails'
 gem 'rails_12factor', group: :production
 gem 'pg'
 gem 'puma'
-gem 'rails', '~> 4.1.14'
+gem 'rails', '~> 4.1.15'
 gem 'sass-rails'
 gem 'uglifier'
 gem 'pry-rails'
