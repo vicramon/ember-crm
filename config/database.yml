@@ -1,21 +1,16 @@
-development:
+default: &default
   adapter: postgresql
   encoding: unicode
-  database: ember-crm_development
   pool: 5
-<% if Gem.win_platform? %>
-  username: ember-crm_development
-  password: only_need_in_windows
-<% end %>
+
+development:
+  <<: *default
+  database: ember-crm_development
 
 test:
-  adapter: postgresql
-  encoding: unicode
+  <<: *default
   database: ember-crm_test
-  pool: 5
 
 production:
-  adapter: postgresql
-  encoding: unicode
+  <<: *default
   database: ember-crm_production
-  pool: 5
