@@ -6,19 +6,19 @@ article#lead
     fieldset
       dl
         dt: label for=view.firstName.elementId First Name:
-        dd: view Ember.TextField value=model.firstName viewName="firstName"
+        dd: = input value=model.firstName viewName="firstName"
 
       dl
         dt: label for=view.lastName.elementId Last Name:
-        dd: view Ember.TextField value=model.lastName viewName="lastName"
+        dd: = input value=model.lastName viewName="lastName"
 
       dl
         dt: label for=view.email.elementId Email:
-        dd: view Ember.TextField value=model.email viewName="email"
+        dd: = input value=model.email viewName="email"
 
       dl
         dt: label for=view.phone.elementId Phone:
-        dd: view Ember.TextField value=model.phone viewName="phone"
+        dd: = input value=model.phone viewName="phone"
 
     fieldset.actions
       input type='submit' value='Save Changes' click="saveChanges"

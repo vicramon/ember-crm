@@ -3,33 +3,33 @@
 unless isEditing
   article#lead
     h1
-      fullName
+      = model.fullName
       link-to 'edit' 'lead.edit' model classNames='edit'
 
     p
       ' Name:
-      fullName
+      model.fullName
 
     p
       ' Email:
-      email
+      model.email
 
     p
       ' Phone:
-      phone
+      model.phone
 
     p
       label for=view.status.elementId Status:
       '
-      view Ember.Select content=App.Lead.STATUSES value=model.status viewName="status"
+      = view 'select' content=leadStatues value=model.status viewName="status"
 
     p
       label for=view.notes.elementId Notes:
       br
-      view Ember.TextArea value=model.notes viewName="notes"
+      = textarea value=model.notes viewName="notes"
 
     p
-      a.delete href='#' click="delete" delete
+      a.delete href='#' click="destroy" delete
 
       input type='submit' value='Save Changes' click="saveChanges"
       if showUnsavedMessage

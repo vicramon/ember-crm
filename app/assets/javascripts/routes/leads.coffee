@@ -1,3 +1,3 @@
 App.LeadsRoute = Ember.Route.extend
 
-  model: -> @store.find 'lead'
+  model: -> @store.findAll 'lead'
